@@ -1,0 +1,13 @@
+{
+	"name": "work",
+	"scripts": {
+		"start:react": "pnpm -C ./packages/react-template client:server",
+		"start:vue": "pnpm -C ./packages/webpack_test serve",
+		"serve:vue": "pnpm start --filter \"@work/webpack_test\"",
+		"clean": "rm -rf node_modules **/*/node_modules",
+		"build": "pnpm recursive run build"
+	},
+	"devDependencies": {
+		"typescript": "^4.5.5"
+	}
+}
